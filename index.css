@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem;
+    background-color: #091413;
+    color: #F2DACE;
+    font-family: Arial, sans-serif;
+}
+
+.generator-card {
+    max-width: 42rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #10201e;
+    border: 1px solid #28504e;
+    border-radius: 1rem;
+}
+
+.main-head {
+    margin-top: 0;
+    font-size: 2.5rem;
+}
+
+#sec-color {
+    display: block;
+    color: #52D3D8;
+}
+
+.mes-el {
+    margin: 1rem 0 1.75rem;
+    color: #c1d0cc;
+}
+
+#generate-btn {
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 0.4rem;
+    background-color: #52D3D8;
+    color: #091413;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#generate-btn:hover {
+    background-color: #78e2e5;
+}
+
+.divider-line {
+    margin: 1.75rem 0;
+    border: 0;
+    border-top: 1px solid #28504e;
+}
+
+.passwords-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.password-box {
+    width: 50%;
+    min-height: 3.25rem;
+    padding: 1rem;
+    cursor: pointer;
+    overflow-wrap: anywhere;
+    border: 1px solid #52D3D8;
+    border-radius: 0.4rem;
+    background-color: #091413;
+    color: #52D3D8;
+    text-align: center;
+}
+
+@media (max-width: 30rem) {
+    .generator-card {
+        padding: 1.5rem;
+    }
+
+    .passwords-container {
+        flex-direction: column;
+    }
+
+    .password-box {
+        width: 100%;
+    }
+}
